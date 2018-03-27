@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -12,4 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  onLogin(form: NgForm) {
+    console.log(form);
+  }
 }
